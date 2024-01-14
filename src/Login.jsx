@@ -1,6 +1,5 @@
 import { Box, Button, ButtonGroup, Flex } from "@chakra-ui/react";
 import React, { useState } from "react";
-
 const Login = () => {
   const [user, setUser] = useState({
     Name: "",
@@ -49,10 +48,9 @@ const Login = () => {
         h="100vh"
         alignItems="center"
       >
-        <Box as="form" method="POST" textAlign="center">
+        <Box as="form" method="POST" textAlign="center" w="300px">
           <Flex
             flexDirection="column"
-            w="500px"
             p="3rem"
             border="2px solid black"
             borderRadius="10px"
@@ -102,12 +100,19 @@ const Login = () => {
               w="100%"
             />
 
-            <a
+            <Box
+              as="a"
+              color="white"
+              bg="blue"
+              borderRadius="30px"
+              textDecoration="none"
+              p="20px"
+              w="100%"
               href="https://drive.google.com/file/d/1JmMCp2nnsFEWvzhPQhvB8bEaDyoEgmgV/view?usp=drivesdk"
               onClick={getData}
             >
               Yuborish
-            </a>
+            </Box>
           </Flex>
         </Box>
       </Flex>
