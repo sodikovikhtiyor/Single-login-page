@@ -1,13 +1,13 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .showcase {
-    background: url('./assets/scopo.jpg') center / cover no-repeat;
-    height: 100vh;
+  background: url("./assets/scopo.jpg") center / cover no-repeat;
+  height: 100vh;
 }
 form {
-    background: #fff;
-
+  background: #fff;
+  border-radius: 10px;
 }
