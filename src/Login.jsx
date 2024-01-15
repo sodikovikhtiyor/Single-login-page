@@ -18,6 +18,11 @@ const Login = () => {
   const getData = async (e) => {
     const { Name, Number, City } = user;
     e.preventDefault();
+    // Check if any of the fields are empty
+    if (!Name || !Number || !City) {
+      alert("Please fill in all the required fields.");
+      return;
+    }
     const options = {
       method: "POST",
       headers: {
