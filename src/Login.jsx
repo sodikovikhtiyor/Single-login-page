@@ -1,5 +1,6 @@
 import { Box, Button, ButtonGroup, Flex, Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
+import Noor from "./assets/noor.png";
 import "./App.css";
 const Login = () => {
   const [user, setUser] = useState({
@@ -69,7 +70,9 @@ const Login = () => {
         <Box as="form" method="POST" textAlign="center" w="300px">
           <Flex
             flexDirection="column"
-            p="3rem"
+            px="3rem"
+            pt='3rem'
+
             border="1px solid #717171"
             borderRadius="10px"
             align="center"
@@ -131,6 +134,7 @@ const Login = () => {
             >
               Yuborish
             </Box>
+            <img src={Noor} width="100px" />
           </Flex>
         </Box>
       </Flex>
