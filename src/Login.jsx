@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     // Check if any of the fields are empty
     if (!Name || !Number || !City) {
-      alert("Please fill in all the required fields.");
+      alert("Iltimos, barcha bo'sh kataklarni to'ldiring!");
       return;
     }
     const options = {
