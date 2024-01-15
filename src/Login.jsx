@@ -1,5 +1,6 @@
-import { Box, Button, ButtonGroup, Flex } from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Flex, Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
+import "./App.css";
 const Login = () => {
   const [user, setUser] = useState({
     Name: "",
@@ -33,7 +34,9 @@ const Login = () => {
       options
     );
     if (res) {
-      alert("Message Sent");
+      alert(
+        "Tashakkur, yaxshi inson!\n Ma'lumotlaringiz qabul qilindi.\n Keyingi sahifaga o'tib, hadyani qabul qiling"
+      );
       window.location.href =
         "https://drive.google.com/file/d/1JmMCp2nnsFEWvzhPQhvB8bEaDyoEgmgV/view?usp=drivesdk";
     } else {
@@ -41,18 +44,22 @@ const Login = () => {
     }
   };
   return (
-    <Box>
+    <Box className="showcase">
       <Flex
         className="form"
-        justifyContent="center"
+        justifyContent="start"
         h="100vh"
         alignItems="center"
+        flexDirection="column"
       >
-        <Box as="form" method="POST" textAlign="center" w="300px">
+        <Heading textAlign="center" my="5rem" color='#fff' textShadow='2px 2px 2px black'>
+          "365 KUN TAQVIMI"ni qo'lga kiritish uchun quyidagi anketani to'ldiring!
+        </Heading>
+        <Box as="form" method="POST" textAlign="center" w="300px" >
           <Flex
             flexDirection="column"
             p="3rem"
-            border="2px solid black"
+            border="1px solid #717171"
             borderRadius="10px"
             align="center"
             gap="1rem"
