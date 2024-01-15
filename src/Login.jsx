@@ -52,10 +52,16 @@ const Login = () => {
         alignItems="center"
         flexDirection="column"
       >
-        <Heading textAlign="center" my="5rem" color='#fff' textShadow='2px 2px 2px black'>
-          "365 KUN TAQVIMI"ni qo'lga kiritish uchun quyidagi anketani to'ldiring!
+        <Heading
+          textAlign="center"
+          my="5rem"
+          color="#fff"
+          textShadow="2px 2px 2px black"
+        >
+          "365 KUN TAQVIMI"ni qo'lga kiritish uchun quyidagi anketani
+          to'ldiring!
         </Heading>
-        <Box as="form" method="POST" textAlign="center" w="300px" >
+        <Box as="form" method="POST" textAlign="center" w="300px">
           <Flex
             flexDirection="column"
             p="3rem"
@@ -87,7 +93,7 @@ const Login = () => {
               autoComplete="off"
               required
               value={user.Number}
-              type="number"
+              type="text"
               name="Number"
               placeholder="Telefon raqam"
               w="100%"
