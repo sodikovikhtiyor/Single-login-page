@@ -44,7 +44,7 @@ const Login = () => {
         "Tashakkur, yaxshi inson!\n Ma'lumotlaringiz qabul qilindi.\n Keyingi sahifaga o'tib, hadyani qabul qiling"
       );
       window.location.href =
-        "https://drive.google.com/file/d/1JmMCp2nnsFEWvzhPQhvB8bEaDyoEgmgV/view?usp=drivesdk";
+        "https://drive.google.com/file/d/1xIOiwPGPi382GH1MA-lasofLxlmN6myi/view?usp=drivesdk";
     } else {
       alert("Error Occured");
     }
